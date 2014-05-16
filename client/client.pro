@@ -13,7 +13,9 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    mainwidget.cpp
+    mainwidget.cpp \
+    tablewidget.cpp
 
 HEADERS  += \
-    mainwidget.h
+    mainwidget.h \
+    tablewidget.h

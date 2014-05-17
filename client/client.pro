@@ -14,8 +14,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     mainwidget.cpp \
-    tablewidget.cpp
+    tablewidget.cpp \
+    entitys.cpp \
+    link.cpp
 
 HEADERS  += \
     mainwidget.h \
-    tablewidget.h
+    tablewidget.h \
+    entities.h

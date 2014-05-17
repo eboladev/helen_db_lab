@@ -6,12 +6,14 @@ TableWidget::TableWidget(QWidget *parent) :
 
     layout = new QGridLayout(this);
     setLayout(layout);
-    QPushButton button;
-    layout->addWidget(&button);
+    QPushButton *button = new QPushButton();
+    QTableView *view = new QTableView();
+    layout->addWidget(view);
+    layout->addWidget(button);
 }
 
 void TableWidget::setDatabase(QSqlDatabase database)
 {
+    db = database;
     qDebug() << database.tables();
-
 }

@@ -31,9 +31,14 @@ MainWidget::MainWidget(QWidget *parent)
     QComboBox *comboBox = new QComboBox(this);
     comboBox->addItems(db.tables());
     layout->addWidget(comboBox);
-    QPushButton *button = new QPushButton("open table", this);
-    layout->addWidget(button, 0, 1);
+
+    QPushButton *exportButton = new QPushButton("export database", this);
+    QPushButton *importButton = new QPushButton("import database", this);
+    layout->addWidget(exportButton, 0, 1);
+    layout->addWidget(importButton, 0, 2);
+
     connect(comboBox, SIGNAL(activated(QString)), this, SLOT(editTable(QString)));
+    connect(exportButton, SIGNAL(clicked()), this, SLOT(exportDatabase()));
 }
 
 void MainWidget::editTable(QString table)
@@ -42,6 +47,13 @@ void MainWidget::editTable(QString table)
     TableWidget *tw = new TableWidget();
     tw->setDatabase(db);
     tw->show();
+}
+
+void MainWidget::exportDatabase()
+{
+    QString fileName = QFileDialog::getOpenFileName(this,
+    tr("Export Database"), "", tr("Database file (*.sql)"));
+
 }
 
 MainWidget::~MainWidget()

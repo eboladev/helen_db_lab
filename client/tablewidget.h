@@ -5,6 +5,7 @@
 #include <QGridLayout>
 #include <QPushButton>
 #include <QSqlDatabase>
+#include <QTableView>
 #include <QDebug>
 
 class TableWidget : public QWidget

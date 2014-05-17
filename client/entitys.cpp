@@ -1,5 +1,6 @@
-#include "entitys.h"
+#include "entities.h"
 
-entitys::entitys()
+QSqlField Employee::getId()
 {
+    return this->field(0);
 }

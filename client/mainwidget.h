@@ -3,12 +3,16 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QComboBox>
+#include <QGridLayout>
+#include <QTableView>
+#include <QMessageBox>
+#include <QFileDialog>
+
 #include <QSqlDatabase>
 #include <QSqlTableModel>
-#include <QMessageBox>
-#include <QTableView>
-#include <QGridLayout>
-#include <QComboBox>
+#include <QSqlQuery>
+
 #include <QDebug>
 #include "tablewidget.h"
 
@@ -25,7 +29,8 @@ public:
 
 public slots:
     void editTable(QString table);
-
+    void exportDatabase();
+//    void importDatabase();
 };
 
 #endif // MAINWIDGET_H

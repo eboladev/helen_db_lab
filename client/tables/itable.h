@@ -8,7 +8,6 @@
 
 class ITable
 {
-private:
 public:
     ITable()
         : model(new QSqlTableModel())
@@ -18,6 +17,9 @@ public:
     {
         QString fileName = QFileDialog::getSaveFileName(0,
          "Export Database", model->tableName() + ".sql", "Database file (*.sql)");
+
+        if (!QFile(fileName).isWritable())
+            return false;
 
         // TODO: file error processing
 
@@ -35,10 +37,14 @@ public:
         return true;
     }
 
-    void load()
+    bool load()
     {
         QString fileName = QFileDialog::getOpenFileName(0,
          "Import Database", model->tableName() + ".sql", "Database file (*.sql)");
+
+        if (!QFile(fileName).isReadable())
+            return false;
+        qDebug() << "fileName: " << fileName;
 
         // TODO: file error processing
 
@@ -51,6 +57,8 @@ public:
         restoreProcess.start("mysql", args);
         restoreProcess.waitForFinished(-1);
         qDebug() << "Restoring of " << model->tableName() << " complete";
+
+        return true;
     }
 
     virtual ~ITable() {}

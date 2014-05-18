@@ -16,23 +16,8 @@ MainWidget::MainWidget(QWidget *parent)
         qDebug() << "Connected succesfully";
     }
 
-
     layout = new QGridLayout(this);
     setLayout(layout);
-
-    LinkTable *table = new LinkTable();
-    table->model->setTable("managers");
-    table->model->setEditStrategy(QSqlTableModel::OnFieldChange);
-    table->model->select();
-
-    table->load();
-
-    QTableView *view = new QTableView(this);
-    view->setModel(table->model);
-
-    layout->addWidget(view);
-
-    emit exit(0);
 //    table->addLink(13, 12);
 
     QComboBox *comboBox = new QComboBox(this);
@@ -48,10 +33,15 @@ MainWidget::MainWidget(QWidget *parent)
     connect(exportButton, SIGNAL(clicked()), this, SLOT(exportDatabase()));
 }
 
-void MainWidget::editTable(QString table)
+void MainWidget::editTable(QString tableName)
 {
+    LinkTable *table = new LinkTable();
+    table->model->setTable(tableName);
+    table->model->setEditStrategy(QSqlTableModel::OnFieldChange);
+    table->model->select();
+
     qDebug() << table << " openned";
-    TableWidget *tw = new TableWidget(this);
+    TableWidget *tw = new TableWidget(table);
     tw->show();
 }
 

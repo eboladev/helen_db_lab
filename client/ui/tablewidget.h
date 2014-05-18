@@ -5,22 +5,30 @@
 #include <QGridLayout>
 #include <QPushButton>
 #include <QSqlDatabase>
+#include <QSqlTableModel>
 #include <QTableView>
 #include <QDebug>
+#include "tables/itable.h"
 
 class TableWidget : public QWidget
 {
     Q_OBJECT
 private:
     QGridLayout *layout;
-    QSqlDatabase db;
+    QTableView *view;
+    QPushButton *deleteButton;
+    QPushButton *saveButton;
+    QPushButton *loadButton;
+    ITable *table;
+
 public:
-    explicit TableWidget(QWidget *parent = 0);
+    explicit TableWidget(ITable *table);
 
 signals:
 
 public slots:
-
+    void save();
+    void load();
 };
 
 #endif // TABLEWIDGET_H

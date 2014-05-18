@@ -29,7 +29,7 @@ public:
     ~MainWidget();
 
 public slots:
-    void editTable(QString table);
+    void editTable(QString tableName);
     void exportDatabase();
 //    void importDatabase();
 };

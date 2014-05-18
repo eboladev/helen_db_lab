@@ -13,12 +13,21 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    mainwidget.cpp \
-    tablewidget.cpp \
-    entitys.cpp \
-    link.cpp
+    ui/mainwidget.cpp \
+    ui/tablewidget.cpp \
+    entities/employee.cpp \
+    entities/link.cpp \
+    entities/manager.cpp \
+    entities/task.cpp \
+    tables/tables.cpp
 
 HEADERS  += \
-    mainwidget.h \
-    tablewidget.h \
-    entities.h
+    ui/tablewidget.h \
+    ui/mainwidget.h \
+    entities/employee.h \
+    entities/entities.h \
+    entities/ientity.h \
+    entities/ilink.h \
+    entities/link.h \
+    entities/manager.h \
+    entities/task.h

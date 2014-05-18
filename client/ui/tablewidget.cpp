@@ -6,8 +6,8 @@ TableWidget::TableWidget(QWidget *parent) :
 
     layout = new QGridLayout(this);
     setLayout(layout);
-    QPushButton *button = new QPushButton();
-    QTableView *view = new QTableView();
+    QPushButton *button = new QPushButton(this);
+    QTableView *view = new QTableView(this);
     layout->addWidget(view);
     layout->addWidget(button);
 }

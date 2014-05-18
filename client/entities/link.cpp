@@ -1,4 +1,4 @@
-#include "entities.h"
+#include "link.h"
 
 QSqlField Link::getSourceId()
 {

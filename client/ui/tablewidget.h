@@ -29,6 +29,7 @@ signals:
 public slots:
     void save();
     void load();
+    void deleteSelected();
 };
 
 #endif // TABLEWIDGET_H

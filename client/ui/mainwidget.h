@@ -30,8 +30,6 @@ public:
 
 public slots:
     void editTable(QString tableName);
-    void exportDatabase();
-//    void importDatabase();
 };
 
 #endif // MAINWIDGET_H

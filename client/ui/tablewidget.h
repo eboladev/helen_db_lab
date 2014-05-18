@@ -6,6 +6,9 @@
 #include <QPushButton>
 #include <QSqlDatabase>
 #include <QSqlTableModel>
+#include <QSqlRecord>
+#include <QSqlField>
+#include <QInputDialog>
 #include <QTableView>
 #include <QDebug>
 #include "tables/itable.h"
@@ -19,6 +22,7 @@ private:
     QPushButton *deleteButton;
     QPushButton *saveButton;
     QPushButton *loadButton;
+    QPushButton *insertButton;
     ITable *table;
 
 public:
@@ -30,6 +34,7 @@ public slots:
     void save();
     void load();
     void deleteSelected();
+    void insertRecord();
 };
 
 #endif // TABLEWIDGET_H

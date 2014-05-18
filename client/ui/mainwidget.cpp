@@ -16,17 +16,21 @@ MainWidget::MainWidget(QWidget *parent)
         qDebug() << "Connected succesfully";
     }
 
-//    QSqlTableModel *model = new QSqlTableModel(this, db);
-//    model->setTable("employees");
-//    model->setEditStrategy(QSqlTableModel::OnFieldChange);
-//    model->select();
 
     layout = new QGridLayout(this);
     setLayout(layout);
 
-//    QTableView *view = new QTableView(this);
-//    view->setModel(model);
-//    layout->addWidget(view);
+    LinkTable *table = new LinkTable(this);
+    table->model->setTable("manager_task");
+    table->model->setEditStrategy(QSqlTableModel::OnFieldChange);
+    table->model->select();
+
+    QTableView *view = new QTableView(this);
+    view->setModel(table->model);
+
+    layout->addWidget(view);
+
+    table->addLink(13, 12);
 
     QComboBox *comboBox = new QComboBox(this);
     comboBox->addItems(db.tables());
@@ -44,8 +48,7 @@ MainWidget::MainWidget(QWidget *parent)
 void MainWidget::editTable(QString table)
 {
     qDebug() << table << " openned";
-    TableWidget *tw = new TableWidget();
-    tw->setDatabase(db);
+    TableWidget *tw = new TableWidget(this);
     tw->show();
 }
 

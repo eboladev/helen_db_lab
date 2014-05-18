@@ -11,9 +11,3 @@ TableWidget::TableWidget(QWidget *parent) :
     layout->addWidget(view);
     layout->addWidget(button);
 }
-
-void TableWidget::setDatabase(QSqlDatabase database)
-{
-    db = database;
-    qDebug() << database.tables();
-}

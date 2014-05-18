@@ -15,6 +15,7 @@
 
 #include <QDebug>
 #include "tablewidget.h"
+#include "tables/linktable.h"
 
 class MainWidget : public QWidget
 {

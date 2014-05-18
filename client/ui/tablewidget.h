@@ -16,7 +16,6 @@ private:
     QSqlDatabase db;
 public:
     explicit TableWidget(QWidget *parent = 0);
-    void setDatabase(QSqlDatabase database);
 
 signals:
 

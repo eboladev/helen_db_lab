@@ -19,7 +19,6 @@ SOURCES += main.cpp \
     entities/link.cpp \
     entities/manager.cpp \
     entities/task.cpp \
-    tables/tables.cpp \
     tables/linktable.cpp
 
 HEADERS  += \

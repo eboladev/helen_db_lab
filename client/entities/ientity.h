@@ -8,6 +8,7 @@ class IEntity: public QSqlRecord
 {
 public:
     virtual QSqlField getId() = 0;
+    virtual ~IEntity() {}
 };
 
 #endif // IENTITY_H

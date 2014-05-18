@@ -20,17 +20,20 @@ MainWidget::MainWidget(QWidget *parent)
     layout = new QGridLayout(this);
     setLayout(layout);
 
-    LinkTable *table = new LinkTable(this);
-    table->model->setTable("manager_task");
+    LinkTable *table = new LinkTable();
+    table->model->setTable("managers");
     table->model->setEditStrategy(QSqlTableModel::OnFieldChange);
     table->model->select();
+
+    table->load();
 
     QTableView *view = new QTableView(this);
     view->setModel(table->model);
 
     layout->addWidget(view);
 
-    table->addLink(13, 12);
+    emit exit(0);
+//    table->addLink(13, 12);
 
     QComboBox *comboBox = new QComboBox(this);
     comboBox->addItems(db.tables());

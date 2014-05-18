@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     MainWidget w;
     w.show();
 
-    LinkTable *lt = new LinkTable();
+//    LinkTable *lt = new LinkTable();
 
     return a.exec();
 }

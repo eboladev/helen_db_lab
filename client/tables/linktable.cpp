@@ -1,7 +1,6 @@
 #include "linktable.h"
 
-LinkTable::LinkTable(QWidget *parent = 0)
-    : model(new QSqlTableModel())
+LinkTable::LinkTable()
 {
 }
 

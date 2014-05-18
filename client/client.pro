@@ -19,7 +19,8 @@ SOURCES += main.cpp \
     entities/link.cpp \
     entities/manager.cpp \
     entities/task.cpp \
-    tables/tables.cpp
+    tables/tables.cpp \
+    tables/linktable.cpp
 
 HEADERS  += \
     ui/tablewidget.h \
@@ -30,4 +31,8 @@ HEADERS  += \
     entities/ilink.h \
     entities/link.h \
     entities/manager.h \
-    entities/task.h
+    entities/task.h \
+    tables/ientitytable.h \
+    tables/ilinktable.h \
+    tables/linktable.h \
+    tables/itable.h

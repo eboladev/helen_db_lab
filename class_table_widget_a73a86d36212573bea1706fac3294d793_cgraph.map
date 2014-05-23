@@ -1,0 +1,8 @@
+<map id="TableWidget::TableWidget" name="TableWidget::TableWidget">
+<area shape="rect" id="node3" href="$class_table_widget.html#a61f55fbbb355a43ca3382546e423c874" title="TableWidget::insertRecord" alt="" coords="235,5,413,33"/>
+<area shape="rect" id="node5" href="$class_table_widget.html#a085ed640f0c4707503e2ebe151a82710" title="TableWidget::deleteSelected" alt="" coords="229,55,419,83"/>
+<area shape="rect" id="node7" href="$class_table_widget.html#a7862e5006bd0149de9293dac205cddfa" title="TableWidget::save" alt="" coords="259,106,389,134"/>
+<area shape="rect" id="node11" href="$class_table_widget.html#a67ebacfd672ef1ed3f2f44eb15c06db8" title="TableWidget::load" alt="" coords="260,157,388,185"/>
+<area shape="rect" id="node9" href="$class_i_table.html#a7f40b9d4ab67806090affbf506b92615" title="ITable::save" alt="" coords="467,106,560,134"/>
+<area shape="rect" id="node13" href="$class_i_table.html#a051b94f659d1a6dc6048cebdcf2f3b1c" title="ITable::load" alt="" coords="468,157,559,185"/>
+</map>

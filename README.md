@@ -1,7 +1,8 @@
 helen_db_lab
 ============
-depends on:
+client depends on:
  * [Qt](http://qt.gitorious.org) 4.7+
+ * mysqldump
 
 setup:
  * install mysql server

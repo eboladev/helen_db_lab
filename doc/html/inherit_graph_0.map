@@ -1,0 +1,8 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node3" href="$class_i_entity.html" title="IEntity" alt="" coords="151,69,209,97"/>
+<area shape="rect" id="node11" href="$class_i_link.html" title="ILink" alt="" coords="155,131,205,159"/>
+<area shape="rect" id="node5" href="$class_employee.html" title="Employee" alt="" coords="260,5,340,33"/>
+<area shape="rect" id="node7" href="$class_manager.html" title="Manager" alt="" coords="263,55,337,83"/>
+<area shape="rect" id="node9" href="$class_task.html" title="Task" alt="" coords="276,106,324,134"/>
+<area shape="rect" id="node13" href="$class_link.html" title="Link" alt="" coords="277,157,323,185"/>
+</map>

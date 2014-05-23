@@ -1,0 +1,9 @@
+<map id="ui/mainwidget.cpp" name="ui/mainwidget.cpp">
+<area shape="rect" id="node3" href="$mainwidget_8h.html" title="mainwidget.h" alt="" coords="409,83,507,111"/>
+<area shape="rect" id="node27" href="$tablewidget_8h.html" title="tablewidget.h" alt="" coords="546,161,645,189"/>
+<area shape="rect" id="node49" href="$linktable_8h.html" title="tables/linktable.h" alt="" coords="1043,161,1163,189"/>
+<area shape="rect" id="node42" href="$itable_8h.html" title="tables/itable.h" alt="" coords="593,315,697,343"/>
+<area shape="rect" id="node53" href="$ilinktable_8h.html" title="tables/ilinktable.h" alt="" coords="1042,238,1165,266"/>
+<area shape="rect" id="node56" href="$link_8h.html" title="entities/link.h" alt="" coords="1189,238,1287,266"/>
+<area shape="rect" id="node58" href="$ilink_8h.html" title="ilink.h" alt="" coords="861,315,917,343"/>
+</map>

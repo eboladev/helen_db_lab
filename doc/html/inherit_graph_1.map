@@ -1,7 +1,0 @@
-<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_i_table.html" title="ITable" alt="" coords="7,71,63,99"/>
-<area shape="rect" id="node3" href="$class_i_entity_table.html" title="IEntityTable\&lt; entity\l_type \&gt;" alt="" coords="113,5,247,49"/>
-<area shape="rect" id="node5" href="$class_i_link_table.html" title="ILinkTable\&lt; ILink \&gt;" alt="" coords="113,71,247,99"/>
-<area shape="rect" id="node7" href="$class_i_link_table.html" title="ILinkTable\&lt; Link \&gt;" alt="" coords="116,122,244,150"/>
-<area shape="rect" id="node9" href="$class_link_table.html" title="LinkTable" alt="" coords="297,122,375,150"/>
-</map>

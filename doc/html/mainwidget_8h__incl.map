@@ -1,8 +1,0 @@
-<map id="ui/mainwidget.h" name="ui/mainwidget.h">
-<area shape="rect" id="node25" href="$tablewidget_8h.html" title="tablewidget.h" alt="" coords="546,83,645,111"/>
-<area shape="rect" id="node47" href="$linktable_8h.html" title="tables/linktable.h" alt="" coords="1043,83,1163,111"/>
-<area shape="rect" id="node40" href="$itable_8h.html" title="tables/itable.h" alt="" coords="593,238,697,266"/>
-<area shape="rect" id="node51" href="$ilinktable_8h.html" title="tables/ilinktable.h" alt="" coords="1042,161,1165,189"/>
-<area shape="rect" id="node54" href="$link_8h.html" title="entities/link.h" alt="" coords="1189,161,1287,189"/>
-<area shape="rect" id="node56" href="$ilink_8h.html" title="ilink.h" alt="" coords="861,238,917,266"/>
-</map>

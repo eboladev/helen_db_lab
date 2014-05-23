@@ -1,9 +1,0 @@
-<map id="entities/ilink.h" name="entities/ilink.h">
-<area shape="rect" id="node3" href="$link_8h.html" title="entities/link.h" alt="" coords="81,83,180,111"/>
-<area shape="rect" id="node5" href="$link_8cpp.html" title="entities/link.cpp" alt="" coords="5,161,117,189"/>
-<area shape="rect" id="node7" href="$linktable_8h.html" title="tables/linktable.h" alt="" coords="141,161,261,189"/>
-<area shape="rect" id="node9" href="$mainwidget_8h.html" title="ui/mainwidget.h" alt="" coords="144,238,259,266"/>
-<area shape="rect" id="node11" href="$main_8cpp.html" title="main.cpp" alt="" coords="69,315,144,343"/>
-<area shape="rect" id="node16" href="$linktable_8cpp.html" title="tables/linktable.cpp" alt="" coords="283,238,419,266"/>
-<area shape="rect" id="node13" href="$mainwidget_8cpp.html" title="ui/mainwidget.cpp" alt="" coords="168,315,296,343"/>
-</map>

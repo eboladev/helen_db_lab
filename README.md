@@ -12,5 +12,9 @@ setup:
 $ mysql -uroot -p < sql/organisation.sql
 ```
  * build client
+```
+$ qmake
+$ make
+```
  * run client
  * enjoy
